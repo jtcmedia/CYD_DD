@@ -12,9 +12,12 @@
 
 
 // Section 1. Call up the right driver file and any options for it
-#define ILI9341_DRIVER     // Standard ILI9341 driver
+//#define ILI9341_DRIVER     // Standard ILI9341 driver
+#define ST7789_DRIVER
 // No TFT_RGB_ORDER override - ILI9341 defaults to RGB
 // No TFT_INVERSION - handled entirely in software via tft.invertDisplay()
+#define TFT_INVERSION_OFF
+#define TFT_RGB_ORDER TFT_BGR
 
 // Section 2. Define the pins that are used to interface with the display here
 #define TFT_BL   21           // LED back-light control pin
